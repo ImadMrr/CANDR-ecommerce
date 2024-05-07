@@ -1,12 +1,13 @@
+import './styles/Banner.css'
 import logo from './assets/logoshop.png'
-import '../styles/Banner.css'
+
 
 function Banner() {
     const title = 'Skyjo'
     return (
-        <div className='lmj-banner'>
-            <img src={logo} alt='La maison jungle' className='lmj-logo' />
-            <h1 className='lmj-title'>{title}</h1>
+        <div className='banner-banner'>
+            <img src={logo} alt='La maison jungle' className='banner-logo' />
+            <h1 className='banner-title'>{title}</h1>
         </div>
     )
 }

@@ -1,0 +1,14 @@
+.banner-banner {
+  display: flex;
+  align-items: center; /* Alignement vertical */
+}
+
+.banner-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.banner-title {
+  text-align: left;
+  margin-left: 10px; /* Espace entre le logo et le titre */
+}
