@@ -14,4 +14,4 @@ function Products( {name_prod, img_prod, price} ) {
   );
 }
 
-export default Products; // Assurez-vous d'exporter le composant Home
+export default Products;

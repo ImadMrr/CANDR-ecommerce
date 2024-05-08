@@ -10,4 +10,4 @@ function ShoppingCart() {
   );
 }
 
-export default ShoppingCart; // Assurez-vous d'exporter le composant Home
+export default ShoppingCart;

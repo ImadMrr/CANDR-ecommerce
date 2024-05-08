@@ -1,15 +1,28 @@
+/* Catalogue.css */
+
 .catalogue {
-    display: flex; /* Utilisation de Flexbox */
-    flex-wrap: wrap; /* Permettre le retour à la ligne */
-    justify-content: space-between; /* Espacement équivalent entre les éléments */
-}
-
-/* Style des produits (vous pouvez adapter selon vos besoins) */
-.Products {
-    width: 200px; /* Largeur des produits */
-    margin-bottom: 20px; /* Marge inférieure pour l'espacement */
-}
-
-.titleCatalogue{
-    padding: 20px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product {
+    width: calc(25% - 20px); /* Calcul de la largeur avec une marge de 20px entre les éléments */
+    margin-bottom: 20px;
+    position: relative; /* Permet de positionner le prix absolument par rapport au conteneur du produit */
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product .price {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond semi-transparent pour le prix */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
