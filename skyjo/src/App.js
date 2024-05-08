@@ -9,12 +9,14 @@ import Contact from './Contact';
 import ShoppingCart from './ShoppingCart';
 import Favorite from './Favorite';
 import logo from './assets/logoshop.png';
-import { CartProvider } from './CartContext'; // Importez le CartProvider
+import { CartProvider } from './CartContext'; 
+import { FavoriteProvider } from './FavoriteContext';
 
 
 function App() {
   return (
     <CartProvider>
+      <FavoriteProvider>
       <Router>
       <div>
         <nav className="top-nav">
@@ -54,6 +56,7 @@ function App() {
         <Footer />
       </div>
       </Router>
+      </FavoriteProvider>
     </CartProvider>
     
   );

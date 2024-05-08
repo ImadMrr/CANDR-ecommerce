@@ -1,40 +1,90 @@
 .shopping-cart {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  
-  .shopping-cart h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .shopping-cart ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .shopping-cart li {
-    margin-bottom: 10px;
-  }
-  
-  .shopping-cart li span {
-    margin-right: 10px;
-  }
-  
-  .shopping-cart button {
-    padding: 5px 10px;
-    margin-left: 5px;
-    border: none;
-    border-radius: 3px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .shopping-cart button:hover {
-    background-color: #0056b3;
-  }
-  
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.shopping-cart h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.shopping-cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.shopping-cart li {
+  margin-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.shopping-cart .product-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.shopping-cart .product-details {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-cart .product-name {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.shopping-cart .product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.shopping-cart .quantity-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-cart .quantity-buttons button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.shopping-cart .remove-button {
+  background-color: #dc3545;
+}
+
+.shopping-cart .total-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.shopping-cart .pay-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.shopping-cart .pay-button:hover {
+  background-color: #218838;
+}

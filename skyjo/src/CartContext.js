@@ -6,16 +6,16 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (product) => {
-    // Vérifie si le produit est déjà dans le panier
+   
     const existingProductIndex = cartItems.findIndex(item => item.name_prod === product.name_prod);
 
     if (existingProductIndex !== -1) {
-      // Si le produit existe déjà dans le panier, augmentez simplement la quantité
+      
       const updatedCart = [...cartItems];
       updatedCart[existingProductIndex].quantity++;
       setCartItems(updatedCart);
     } else {
-      // Sinon, ajoutez le produit au panier avec une quantité de 1
+      
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     }
   };
