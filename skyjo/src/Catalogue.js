@@ -11,27 +11,51 @@ function Catalogue() {
             <div class='catalogue'>
                 
                 <Products 
-                    img_prod = "https://media.gqmagazine.fr/photos/632d81d65e9e5a2a0c6ded7b/1:1/w_3646,h_3646,c_limit/GettyImages-1231374767.jpg"  
+                    img_prod = ".src/assets/casque.webp"  
                     name_prod = "Air Pod Max"
-                    price = "550€"
+                    price = "700$"
                     />
                 
                 <Products 
-                    img_prod = "https://media.gqmagazine.fr/photos/632d81d65e9e5a2a0c6ded7b/1:1/w_3646,h_3646,c_limit/GettyImages-1231374767.jpg"  
-                    name_prod = "Air Pod Max"
-                    price = "550€"
+                    img_prod = "./assets/ecran.jpg"  
+                    name_prod = "Full HD screen"
+                    price = "650$"
                     />
                 
                 <Products 
-                    img_prod = "https://media.gqmagazine.fr/photos/632d81d65e9e5a2a0c6ded7b/1:1/w_3646,h_3646,c_limit/GettyImages-1231374767.jpg"  
-                    name_prod = "Air Pod Max"
-                    price = "550€"
+                    img_prod = "./assets/gourde.jpg"  
+                    name_prod = "Bottle"
+                    price = "70$"
                     />
                 
                 <Products 
-                    img_prod = "https://media.gqmagazine.fr/photos/632d81d65e9e5a2a0c6ded7b/1:1/w_3646,h_3646,c_limit/GettyImages-1231374767.jpg"  
-                    name_prod = "Air Pod Max"
-                    price = "550€"
+                    img_prod = "./assets/iphone.webp"  
+                    name_prod = "iPhone 14"
+                    price = "800$"
+                    />
+                
+                <Products 
+                    img_prod = "./assets/macbook.webp"  
+                    name_prod = "Macbook"
+                    price = "2 000$"
+                    />
+                
+                <Products 
+                    img_prod = "./assets/clavier.webp"  
+                    name_prod = "Keyboard"
+                    price = "30$"
+                    />
+                
+                <Products 
+                    img_prod = "./assets/usbkey.webp"  
+                    name_prod = "USB key 1T"
+                    price = "100$"
+                    />
+                
+                <Products 
+                    img_prod = "./assets/bag.jpg"  
+                    name_prod = "Bag"
+                    price = "60$"
                     />
             
             </div>
