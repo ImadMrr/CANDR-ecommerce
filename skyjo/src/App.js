@@ -9,7 +9,6 @@ import Contact from './Contact';
 import ShoppingCart from './ShoppingCart';
 import Favorite from './Favorite';
 import logo from './assets/logoshop.png';
-import Catalogue from './Catalogue';
 
 
 function App() {
