@@ -1,6 +1,6 @@
 
 import './styles/App.css';
-import Banner from './Banner';
+import Footer from './Footer';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Products from './Products';
@@ -46,9 +46,14 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/shopping cart" element={<ShoppingCart />} />
+          <Route path="/favorite" element={<Favorite />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
+    
+    
   );
 }
 
