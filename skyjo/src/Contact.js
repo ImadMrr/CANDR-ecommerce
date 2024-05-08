@@ -32,7 +32,7 @@ function Contact() {
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message"></textarea>  {/* zone text plu grd pour msg vertical. */}
           </div>
           <button type="submit">Send</button>
         </form>
