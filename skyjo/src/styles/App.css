@@ -37,8 +37,6 @@
   }
 }
 
-/* App.css */
-
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -52,9 +50,6 @@
   list-style: none;
   display: flex;
 }
-
-
-/* App.css */
 
 .top-nav {
   display: flex;
@@ -71,7 +66,7 @@
 }
 
 .logo {
-  height: 60px; /* ajustez la taille selon vos besoins */
+  height: 60px;
   margin-right: 20px;
 }
 

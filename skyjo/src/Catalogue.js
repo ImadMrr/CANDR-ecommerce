@@ -1,66 +1,63 @@
-import React from 'react'
-import Products from './Products'
-import './styles/Catalogue.css'
+import React from 'react';
+import Products from './Products';
+import './styles/Catalogue.css';
+import casque from './assets/casque.png';
+import ecran from './assets/ecran.png';
+import gourde from './assets/gourde.png';
+import iphone from './assets/iphone.png';
+import macbook from './assets/macbook.png';
+import clavier from './assets/clavier.png';
+import usbkey from './assets/usbkey.png';
+import bag from './assets/bag.png';
 
 function Catalogue() {
     return (
-
-        <div class="titleCatalogue">   
+        <div className="titleCatalogue">   
             <h1> Our Products </h1>
-
-            <div class='catalogue'>
-                
+            <div className='catalogue'>
                 <Products 
-                    img_prod = ".src/assets/casque.webp"  
-                    name_prod = "Air Pod Max"
-                    price = "700$"
-                    />
-                
+                    img_prod={casque}
+                    name_prod="Air Pod Max"
+                    price="700$"
+                />
                 <Products 
-                    img_prod = "./assets/ecran.jpg"  
-                    name_prod = "Full HD screen"
-                    price = "650$"
-                    />
-                
+                    img_prod={ecran}  
+                    name_prod="Full HD screen"
+                    price="650$"
+                />
                 <Products 
-                    img_prod = "./assets/gourde.jpg"  
-                    name_prod = "Bottle"
-                    price = "70$"
-                    />
-                
+                    img_prod={gourde}  
+                    name_prod="Bottle"
+                    price="70$"
+                />
                 <Products 
-                    img_prod = "./assets/iphone.webp"  
-                    name_prod = "iPhone 14"
-                    price = "800$"
-                    />
-                
+                    img_prod={iphone}  
+                    name_prod="iPhone 14"
+                    price="800$"
+                />
                 <Products 
-                    img_prod = "./assets/macbook.webp"  
-                    name_prod = "Macbook"
-                    price = "2 000$"
-                    />
-                
+                    img_prod={macbook}  
+                    name_prod="Macbook"
+                    price="2 000$"
+                />
                 <Products 
-                    img_prod = "./assets/clavier.webp"  
-                    name_prod = "Keyboard"
-                    price = "30$"
-                    />
-                
+                    img_prod={clavier}  
+                    name_prod="Keyboard"
+                    price="30$"
+                />
                 <Products 
-                    img_prod = "./assets/usbkey.webp"  
-                    name_prod = "USB key 1T"
-                    price = "100$"
-                    />
-                
+                    img_prod={usbkey}  
+                    name_prod="USB key 1T"
+                    price="100$"
+                />
                 <Products 
-                    img_prod = "./assets/bag.jpg"  
-                    name_prod = "Bag"
-                    price = "60$"
-                    />
-            
+                    img_prod={bag}  
+                    name_prod="Bag"
+                    price="60$"
+                />
             </div>
         </div>
-    )
+    );
 }
 
-export default Catalogue
+export default Catalogue;

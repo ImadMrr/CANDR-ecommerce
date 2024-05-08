@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 function Favorite() {
@@ -10,4 +9,4 @@ function Favorite() {
   );
 }
 
-export default Favorite; // Assurez-vous d'exporter le composant Home
+export default Favorite; 
