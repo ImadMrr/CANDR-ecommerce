@@ -1,20 +1,26 @@
-// App.js
 
 import './styles/App.css';
 import Banner from './Banner';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './Home'; // Importez les composants pour les autres pages
+import Home from './Home';
 import Products from './Products';
 import About from './About';
 import Contact from './Contact';
+import ShoppingCart from './ShoppingCart';
+import Favorite from './Favorite';
+import logo from './assets/logoshop.png';
+
 
 function App() {
   return (
     <Router>
       <div>
-        <Banner />
-        <nav>
-          <ul>
+        <nav className="top-nav">
+          <div className="logo-container">
+            <img src={logo} alt="Logo" className="logo" />
+            <h1 className="logo-name">SKYJO</h1>
+          </div>
+          <ul className="nav-links">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -27,9 +33,14 @@ function App() {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            <li>
+              <Link to="/shopping cart">Shopping-Cart</Link>
+            </li>
+            <li>
+              <Link to="/favorite">Favorite</Link>
+            </li>
           </ul>
         </nav>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
