@@ -1,0 +1,47 @@
+/* Style de la div contenant les produits */
+.containerProd {
+    width: 200px; /* Largeur du conteneur */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 8px; /* Coins arrondis */
+    margin: 10px; /* Marge extérieure */
+    padding: 10px; /* Remplissage intérieur */
+    position: relative; /* Position relative pour positionner les icônes */
+  }
+  
+  /* Style de l'image du produit */
+  .imgProd {
+    width: 100%; /* Remplir la largeur du conteneur */
+    height: auto; /* Hauteur automatique */
+    border-radius: 8px; /* Coins arrondis */
+    margin-bottom: 10px; /* Marge inférieure */
+  }
+  
+  /* Style du titre du produit */
+  .nameProd {
+    font-size: 18px; /* Taille de la police */
+    margin-bottom: 5px; /* Marge inférieure */
+  }
+  
+  /* Style du prix du produit */
+  .priceProd {
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #007bff; /* Couleur bleue */
+  }
+  
+  /* Style de l'icône du coeur */
+  .likeProd {
+    position: absolute; /* Position absolue */
+    top: 10px; /* Distance du haut */
+    right: 10px; /* Distance de la droite */
+    width: 20px; /* Largeur de l'icône */
+  }
+  
+  /* Style de l'icône du caddie */
+  .buyProd {
+    position: absolute; /* Position absolue */
+    bottom: 10px; /* Distance du bas */
+    right: 10px; /* Distance de la droite */
+    width: 20px; /* Largeur de l'icône */
+  }
+  

@@ -1,0 +1,15 @@
+.catalogue {
+    display: flex; /* Utilisation de Flexbox */
+    flex-wrap: wrap; /* Permettre le retour à la ligne */
+    justify-content: space-between; /* Espacement équivalent entre les éléments */
+}
+
+/* Style des produits (vous pouvez adapter selon vos besoins) */
+.Products {
+    width: 200px; /* Largeur des produits */
+    margin-bottom: 20px; /* Marge inférieure pour l'espacement */
+}
+
+.titleCatalogue{
+    padding: 20px;
+}
