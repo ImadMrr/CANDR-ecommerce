@@ -12,11 +12,11 @@ function Contact() {
         </div>
         <div className="contact-option">
           <i className="fas fa-phone-alt"></i>
-          <p>Phone: +1 (123) 456-7890</p>
+          <p>Phone: +444 (444) 444-4444</p>
         </div>
         <div className="contact-option">
           <i className="fas fa-map-marker-alt"></i>
-          <p>Address: 123 Skyjo Street, Sky City, SKY123</p>
+          <p>Address: 444 Skyjo Street, Sky City, SKY123</p>
         </div>
       </div>
       <div className="contact-form">

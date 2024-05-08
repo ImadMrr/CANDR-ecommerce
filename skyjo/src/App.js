@@ -9,11 +9,13 @@ import Contact from './Contact';
 import ShoppingCart from './ShoppingCart';
 import Favorite from './Favorite';
 import logo from './assets/logoshop.png';
+import { CartProvider } from './CartContext'; // Importez le CartProvider
 
 
 function App() {
   return (
-    <Router>
+    <CartProvider>
+      <Router>
       <div>
         <nav className="top-nav">
           <div className="logo-container">
@@ -34,7 +36,7 @@ function App() {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/shopping cart">Shopping-Cart</Link>
+            <Link to="/shoppingCart">Shopping Cart</Link>
             </li>
             <li>
               <Link to="/favorite">Favorite</Link>
@@ -46,13 +48,13 @@ function App() {
           <Route path="/products" element={<Catalogue />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/shopping cart" element={<ShoppingCart />} />
+          <Route path="/shoppingCart" element={<ShoppingCart />} />
           <Route path="/favorite" element={<Favorite />} />
         </Routes>
         <Footer />
       </div>
-    </Router>
-    
+      </Router>
+    </CartProvider>
     
   );
 }
