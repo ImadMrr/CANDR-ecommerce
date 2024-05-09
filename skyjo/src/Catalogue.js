@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, {  useContext } from 'react';
 
 import Products from './Products';
-import ShoppingCart from './ShoppingCart';
 import './styles/Catalogue.css';
 import casque from './assets/casque.png';
 import ecran from './assets/ecran.png';

@@ -7,7 +7,7 @@ import { FavoriteContext } from './FavoriteContext';
 
 function Products({ name_prod, img_prod, price }) {
     const { addToCart } = useContext(CartContext);
-    const { favoriteItems, addToFavorites, removeFromFavorites } = useContext(FavoriteContext);
+    const { addToFavorites, removeFromFavorites } = useContext(FavoriteContext);
     const [added, setAdded] = useState(false);
     const [liked, setLiked] = useState(() => {
         const isLiked = localStorage.getItem(name_prod);
