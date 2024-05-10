@@ -49,7 +49,7 @@ function Products( {name_prod, img_prod, price, id} ) {
   return (
     <div className={`containerProd ${added ? 'added-to-cart' : ''}`} key = {id} > 
       <h2 className="nameProd" > {name_prod} </h2>
-      <img className="imgProd" src = {img_prod} onClick={goInfo}/>
+      <img className="imgProd" src = {img_prod} onClick={goInfo} />
       <p className="priceProd" > {price} </p>
       <img className="likeProd" src={liked ? likepress : like} alt="Like" onClick={handleLikeClick} />
             <img className="buyProd" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY1xJNgFylvNetWjr_M6J3QSSptq5HmPVtNjKOwQQ-5w&s" alt="Buy" onClick={handleAddToCart}/>

@@ -1,66 +1,46 @@
-/* Style pour tous les conteneurs de produits */
-
 .containerProd {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
-  position: relative;
   width: calc(20% - 20px); 
-  overflow: hidden;
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  margin: 10px; 
+  padding: 10px; 
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
 }
-
-
-/* Les styles pour .containerProd ont été supprimés car ils ne sont pas utilisés */
-
-/* Les autres styles sont restés inchangés */
-.containerProd .imgProd {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  object-fit: cover;
+.imgProd {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 10px; 
 }
 
 .nameProd {
-  font-size: 18px;
-  margin-bottom: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 18px; 
+  margin-bottom: 5px; 
 }
 
 .priceProd {
-  font-size: 16px;
-  font-weight: bold;
-  color: #007bff;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  max-width: calc(100% - 20px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #007bff; 
+  position: absolute; 
+  bottom: 10px; 
+  left: 10px; 
 }
 
 .likeProd {
-  position: absolute;
-  top: 10px;
+  position: absolute; 
+  top: 10px; 
   right: 10px;
   width: 20px;
 }
 
 .buyProd {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 20px;
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
+  width: 20px; 
 }
 
 .containerProd.added-to-cart {
@@ -69,9 +49,19 @@
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+      opacity: 0;
   }
   100% {
-    opacity: 1;
+      opacity: 1;
   }
 }
+
+
+.imgProd {
+  width: 100%; 
+  height: 250px; 
+  object-fit:scale-down; 
+  border-radius: 8px; 
+  margin-bottom: 10px; 
+}
+
