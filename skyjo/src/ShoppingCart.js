@@ -26,7 +26,7 @@ function ShoppingCart() {
             {cartItems.map((item, index) => (
                 <li key={index}>
                     <img className="product-image" src={item.img_prod} alt={item.name_prod} />
-                    <span>{item.name_prod}</span> - <span>{item.price}</span> - Quantity: <span>{item.quantity}</span>
+                    <span>{item.name_prod}</span> - <span>{item.price}</span> - Quantity : <span>{item.quantity}</span>
                     <button onClick={() => handleDecrementQuantity(index)}>-</button>
                     <button onClick={() => handleIncrementQuantity(index)}>+</button>
                     <button onClick={() => handleRemoveItem(index)}>Remove</button>
