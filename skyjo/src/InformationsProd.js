@@ -52,7 +52,6 @@ function InformationsProd() {
             <p>{location.state.price}</p>
             <p>{location.state.description}</p>
 
-            {/* Afficher les images supplémentaires du produit */}
             {location.state.images.map(image =>
                 <img src={image} key={image} alt="Product" />
             )}
