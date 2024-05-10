@@ -7,19 +7,15 @@ import { FavoriteContext } from './FavoriteContext';
 
 function Products({ name_prod, img_prod, price }) {
     const { addToCart } = useContext(CartContext);
-    const { addToFavorites, removeFromFavorites } = useContext(FavoriteContext);
+    const { addToFavorites, removeFromFavorites, favoriteItems } = useContext(FavoriteContext);
     const [added, setAdded] = useState(false);
-    const [liked, setLiked] = useState(() => {
-        const isLiked = localStorage.getItem(name_prod);
-        return isLiked === 'true';
-    });
-
+    const [liked, setLiked] = useState(false);
+    
     useEffect(() => {
-        const isLiked = localStorage.getItem(name_prod);
-        if (isLiked === 'true') {
-            setLiked(true);
-        }
-    }, [name_prod]);
+        //produit present ?
+        const isLiked = favoriteItems.some(item => item.name_prod === name_prod);
+        setLiked(isLiked); //maj des like
+    }, [name_prod, favoriteItems]);
 
     const handleAddToCart = () => {
         addToCart({ name_prod, img_prod, price });
@@ -30,13 +26,15 @@ function Products({ name_prod, img_prod, price }) {
     };
 
     const handleLikeClick = () => {
-        setLiked(!liked);
-        if (!liked) {
-            addToFavorites({ name_prod, price });
-        } else {
-            removeFromFavorites(name_prod);
+        const isProductLiked = favoriteItems.some(item => item.name_prod === name_prod); //deja en favori ?
+        setLiked(!isProductLiked); //inverse
+        if (!isProductLiked) { //si pas en fav
+            addToFavorites({ name_prod, price }); //ajoute en state et local
+            localStorage.setItem(name_prod, 'true'); 
+        } else { 
+            removeFromFavorites(name_prod); //retire des fav en state et local
+            localStorage.removeItem(name_prod); //
         }
-        localStorage.setItem(name_prod, !liked);
     };
 
     return (
