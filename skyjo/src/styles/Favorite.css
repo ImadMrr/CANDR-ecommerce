@@ -54,3 +54,8 @@
 .favorite-items li button:hover {
     background-color: #c82333;
 }
+
+.img_fav{
+    width: 200px; /* Largeur souhaitée */
+    height: auto; /* Hauteur ajustée proportionnellement */
+}

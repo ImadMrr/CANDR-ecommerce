@@ -33,7 +33,7 @@ function Products( {name_prod, img_prod, price, id, description, brand, category
     const isProductLiked = favoriteItems.some(item => item.name_prod === name_prod); //deja en favori ?
     setLiked(!isProductLiked); //inverse
     if (!isProductLiked) { //si pas en fav
-        addToFavorites({ name_prod, price }); //ajoute en state et local
+        addToFavorites({ name_prod, img_prod, price }); //ajoute en state et local
         localStorage.setItem(name_prod, 'true'); 
     } else { 
         removeFromFavorites(name_prod); //retire des fav en state et local
