@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { FavoriteContext } from './FavoriteContext';
+import './styles/Favorite.css'
 
 function Favorite() {
     const { favoriteItems, removeFromFavorites } = useContext(FavoriteContext);

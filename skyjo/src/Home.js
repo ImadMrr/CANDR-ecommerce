@@ -4,9 +4,21 @@ function Home() {
   return (
     <div>
       <h2>Home</h2>
-      {/* Ajoutez ici le contenu de la page d'accueil */}
+      
+      <div className="recommendations">
+        <h3>Recommandations</h3>
+        <ul>
+          <li>AJOUT DYNAMIC</li>
+        </ul>
+      </div>
+      <div className="discounts">
+        <h3>Réductions</h3>
+        <ul>
+          <li>AJOUT DYNAMIC</li>
+        </ul>
+      </div>
     </div>
   );
 }
 
-export default Home; // Assurez-vous d'exporter le composant Home
+export default Home;
