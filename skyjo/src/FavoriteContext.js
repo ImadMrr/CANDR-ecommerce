@@ -1,22 +1,34 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const FavoriteContext = createContext();
 
 export const FavoriteProvider = ({ children }) => {
-    const [favoriteItems, setFavoriteItems] = useState([]);
+  //useState init panier du localsorage
+  const [favoriteItems, setFavoriteItems] = useState(
+    JSON.parse(localStorage.getItem('favoriteItems')) || []
+  );
 
-    const addToFavorites = (product) => {
-        setFavoriteItems([...favoriteItems, product]);
-    };
+  //sauvegarde panier dans localstorage a chaque maj
+  useEffect(() => {
+    localStorage.setItem('favoriteItems', JSON.stringify(favoriteItems));
+  }, [favoriteItems]);
 
-    const removeFromFavorites = (productName) => {
-        const updatedFavorites = favoriteItems.filter(item => item.name_prod !== productName);
-        setFavoriteItems(updatedFavorites);
-    };
+  const addToFavorites = (product) => {
+    setFavoriteItems([...favoriteItems, product]);
+  };
 
-    return (
-        <FavoriteContext.Provider value={{ favoriteItems, addToFavorites, removeFromFavorites }}>
-            {children}
-        </FavoriteContext.Provider>
+  const removeFromFavorites = (productName) => {
+    const updatedFavorites = favoriteItems.filter(
+      (item) => item.name_prod !== productName
     );
+    setFavoriteItems(updatedFavorites);
+  };
+
+  return (
+    <FavoriteContext.Provider
+      value={{ favoriteItems, addToFavorites, removeFromFavorites }}
+    >
+      {children}
+    </FavoriteContext.Provider>
+  );
 };
