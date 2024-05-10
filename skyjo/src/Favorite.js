@@ -15,7 +15,7 @@ function Favorite() {
             <ul>
                 {favoriteItems.map((item, index) => (
                     <li key={index}>
-                        <span>{item.name_prod}</span> - <span>{item.price}</span>
+                        <span>{item.img_prod}</span><span>{item.name_prod}</span> - <span>{item.price}</span>
                         <button onClick={() => handleRemoveFavorite(item.name_prod)}>Remove</button>
                     </li>
                 ))}
