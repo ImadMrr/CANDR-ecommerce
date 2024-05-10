@@ -4,6 +4,7 @@ import { CartContext } from './CartContext';
 import { FavoriteContext } from './FavoriteContext';
 import like from './assets/like.png';
 import likepress from './assets/likepress.png';
+import './styles/Informations.css'
 
 function InformationsProd() {
     const location = useLocation();
@@ -56,15 +57,9 @@ function InformationsProd() {
                 <img src={image} key={image} alt="Product" />
             )}
 
-            <button className="Buy">Buy it now !</button>
-            <button className="Like">LIKE</button>
-
             <p> Category : {location.state.category} </p>
             <p> Stock : {location.state.stock} </p>
             <h3>Discount : {location.state.discount}%</h3>
-
-            <img className="likeProd" src={liked ? likepress : like} alt="Like" onClick={handleLikeClick} />
-            <img className="buyProd" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY1xJNgFylvNetWjr_M6J3QSSptq5HmPVtNjKOwQQ-5w&s" alt="Buy" onClick={handleAddToCart}/>
         </div>
     );
 }
