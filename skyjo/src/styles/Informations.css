@@ -1,65 +1,7 @@
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex; /* Utilise Flexbox pour aligner les éléments */
-}
-
-/* Style des boutons */
-.Buy, .Like {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px; /* Ajoutez un peu d'espace entre les boutons */
-}
-
-.Like {
-    background-color: #f8f9fa;
-    color: #007bff;
-    border: 1px solid #007bff;
-}
-
-/* Style des informations produit */
-.InformationsContainer {
-    flex: 1; /* Prend autant d'espace que possible */
-    padding-right: 20px; /* Ajoute de l'espace à droite */
-}
-
-.ProductInfo {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
-}
-
-/* Style de l'image principale */
-.MainImage img {
-    width: 100%; /* Ajuste la largeur de l'image principale */
-    display: block;
-    margin-bottom: 20px; /* Ajoute un espace sous l'image principale */
-}
-
-/* Style des icônes */
-.likeProd, .buyProd {
-    position: absolute; 
-    width: 20px;
-}
-
 .likeProd {
-    position:relative; 
-    top: 50px; 
-    right: 0px;
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
     width: 20px;
 }
 
@@ -68,11 +10,4 @@ body {
     bottom: 10px; 
     right: 10px; 
     width: 20px; 
-}
-
-/* Style des images supplémentaires */
-.ProductImages img {
-    width: 100px; /* Ajuste la taille des images supplémentaires */
-    margin-top: 20px; /* Ajoute de l'espace au-dessus des images supplémentaires */
-    display: block;
 }
