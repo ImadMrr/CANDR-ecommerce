@@ -78,7 +78,7 @@
 }
 
 .shopping-cart .quantity-buttons button:hover {
-  background-color: #0056b3; /* Changement de couleur au survol */
+  background-color: #0056b3; 
 }
 
 .shopping-cart .remove-button {
@@ -91,7 +91,7 @@
 }
 
 .shopping-cart .remove-button:hover {
-  background-color: #c82333; /* Changement de couleur au survol */
+  background-color: #c82333; 
 }
 
 .shopping-cart .total-price {
