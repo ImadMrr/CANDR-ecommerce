@@ -16,7 +16,7 @@
 
 .product {
   margin-bottom: 20px;
-  position: relative; /* positionne le prix par rapport au conteneur du produit */
+  position: relative; 
   flex-wrap: wrap;
   justify-content: space-between;
 }
