@@ -12,6 +12,8 @@ function InformationsProd() {
     const { addToFavorites, removeFromFavorites, favoriteItems } = useContext(FavoriteContext);
     const [liked, setLiked] = useState(false);
     const [addedToCart, setAddedToCart] = useState(false);
+    const [zoomedImage, setZoomedImage] = useState(null);
+    const [showModal, setShowModal] = useState(false); // Nouvelle variable d'état pour afficher/masquer la boîte modale
 
     useEffect(() => {
         // Vérifie si le produit est déjà en favori
@@ -44,6 +46,15 @@ function InformationsProd() {
         }
     };
 
+    const handleImageClick = (image) => {
+        setZoomedImage(image);
+        setShowModal(true); // Afficher la boîte modale lorsque l'image est cliquée
+    };
+
+    const closeModal = () => {
+        setShowModal(false); // Masquer la boîte modale lorsque l'utilisateur clique à l'extérieur de l'image zoomée
+    };
+
     return (
         <div className="container clearfix">
             <div className="info-section">
@@ -68,9 +79,21 @@ function InformationsProd() {
             </div>
             <div className="image-gallery">
                 {location.state.images.map(image =>
-                    <img src={image} key={image} alt="Product" />
+                    <img
+                        src={image}
+                        key={image}
+                        alt="Product"
+                        onClick={() => handleImageClick(image)}
+                    />
                 )}
             </div>
+            {showModal && (
+                <div className="modal" onClick={closeModal}>
+                    <div className="modal-content">
+                        <img src={zoomedImage} alt="Zoomed Product" className="modal-img" />
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

@@ -16,7 +16,7 @@ function Footer() {
           <h2>Services</h2>
           <ul>
             <li><a href="/products">Our Products</a></li>
-            <li><a href="/shopping cart">Shopping Cart</a></li>
+            <li><a href="/shoppingCart">Shopping Cart</a></li>
             <li><a href="/favorite">Favorites</a></li>
           </ul>
         </div>
