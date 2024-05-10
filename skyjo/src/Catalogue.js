@@ -49,7 +49,7 @@ function Catalogue() {
                             name_prod={product.title}
                             price={product.price + '$'}
                             addToCart={() => handleAddToCart(
-                                { name_prod: name_prod, img_prod: img_prod, price: price })}
+                                { name_prod: product.title, img_prod: product.thumbnail, price: product.price })}
                         />
                     ))}
             </div>
