@@ -36,7 +36,7 @@ function ShoppingCart() {
         <div className="total-price">
             Total: {totalPrice.toFixed(2)}$
         </div>
-        <button className="pay-button">Payer</button>
+        <button className="pay-button">Pay now !</button>
     </div>
 );
 
