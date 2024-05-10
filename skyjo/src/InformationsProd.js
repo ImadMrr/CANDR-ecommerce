@@ -29,6 +29,6 @@ function InformationsProd( ) {
             <h3>Rate : {location.state.rating}/5</h3>
         </div>
     );
-  }
-  
-  export default InformationsProd;
+}
+
+export default InformationsProd;
