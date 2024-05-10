@@ -50,8 +50,10 @@ function InformationsProd() {
                 <h2>{location.state.name_prod}</h2>
                 <h3>{location.state.brand}</h3>
                 <p className="category-info">Category: {location.state.category}</p>
-                <p className="discount-info">Discount: {location.state.discount}%</p>
+                
+                <p className="product-description">{location.state.description}</p>
                 <p className="product-price">{location.state.price}</p>
+                <p className="discount-info">Discount: {location.state.discount}%</p>
                 <div className="action-buttons">
                     <button className="add-to-cart" onClick={handleAddToCart}>Add to cart</button>
                     <button className="like-button" onClick={handleLikeClick}>
@@ -59,7 +61,7 @@ function InformationsProd() {
                     </button>
                     <p>Stock: {location.state.stock}</p>
                 </div>
-                <p className="product-description">{location.state.description}</p>
+                
             </div>
             <div className="image-section">
                 <img className="product-image" src={location.state.img_prod} alt="Product" />

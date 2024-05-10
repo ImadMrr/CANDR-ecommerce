@@ -13,11 +13,26 @@
   height: auto; 
   border-radius: 8px; 
   margin-bottom: 10px; 
+  cursor: pointer;
 }
 
 .nameProd {
-  font-size: 18px; 
-  margin-bottom: 5px; 
+  font-size: 18px;
+  margin-bottom: 5px;
+  cursor: pointer; 
+}
+
+
+@keyframes clickAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
+.nameProd:hover {
+  animation: clickAnimation 0.3s linear; 
+  cursor: pointer; 
 }
 
 .priceProd {
@@ -34,6 +49,7 @@
   top: 10px; 
   right: 10px;
   width: 20px;
+  cursor: pointer;
 }
 
 .buyProd {
@@ -41,6 +57,7 @@
   bottom: 10px; 
   right: 10px; 
   width: 20px; 
+  cursor: pointer;
 }
 
 .containerProd.added-to-cart {
