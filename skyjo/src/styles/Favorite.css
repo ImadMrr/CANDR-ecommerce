@@ -3,16 +3,16 @@
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
-    max-width: 600px; /* Limite la largeur des favoris */
-    margin-left: auto; /* Centre les favoris horizontalement */
-    margin-right: auto; /* Centre les favoris horizontalement */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+    max-width: 600px; /* Limiter largeur */
+    margin-left: auto; /* Centrer favoris horizontalement */
+    margin-right: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .favorite-items h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    text-align: center; /* Centre le titre */
+    text-align: center; /* Centrer  titre */
 }
 
 .favorite-items ul {
@@ -21,20 +21,20 @@
 }
 
 .favorite-items li {
-    margin-bottom: 20px; /* Augmente l'espacement entre les éléments */
+    margin-bottom: 20px; 
     padding: 15px;
     border-radius: 8px;
     background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.3s ease; /* Ajoute une transition douce */
+    transition: all 0.3s ease; /* transition */
 }
 
 .favorite-items li:hover {
-    transform: translateY(-3px); /* Soulève légèrement l'élément au survol */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Augmente l'ombre au survol */
+    transform: translateY(-3px); /* Soulève légèrement */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .favorite-items li span {
@@ -48,7 +48,7 @@
     border-radius: 5px;
     padding: 8px 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Ajoute une transition douce pour le changement de couleur */
+    transition: background-color 0.3s ease;
 }
 
 .favorite-items li button:hover {
