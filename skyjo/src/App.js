@@ -9,6 +9,7 @@ import Contact from './Contact';
 import ShoppingCart from './ShoppingCart';
 import Favorite from './Favorite';
 import logo from './assets/logoshop.png';
+import InformationsProd from './InformationsProd';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/shopping cart" element={<ShoppingCart />} />
           <Route path="/favorite" element={<Favorite />} />
+          <Route path="/InformationsProd" element={ < InformationsProd />} />
         </Routes>
         <Footer />
       </div>

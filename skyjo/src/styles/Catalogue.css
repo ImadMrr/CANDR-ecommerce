@@ -15,9 +15,8 @@
 }
 
 .product {
-    width: calc(25% - 20px); /* Calcul de la largeur avec une marge de 20px entre les éléments */
     margin-bottom: 20px;
-    position: relative; /* Permet de positionner le prix absolument par rapport au conteneur du produit */
+    position: relative; /* positionne le prix par rapport au conteneur du produit */
   }
   
   .product img {
@@ -29,7 +28,7 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255, 0.7); /* Fond semi-transparent pour le prix */
+    background-color: rgba(255, 255, 255, 0.7); /*fond quasi transparent pour le prix */
     padding: 5px 10px;
     border-radius: 5px;
   }
