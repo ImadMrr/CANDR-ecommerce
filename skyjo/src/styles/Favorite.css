@@ -56,6 +56,6 @@
 }
 
 .img_fav{
-    width: 200px; /* Largeur souhaitée */
-    height: auto; /* Hauteur ajustée proportionnellement */
+    width: 200px;
+    height: auto; 
 }

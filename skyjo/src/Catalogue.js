@@ -2,6 +2,7 @@ import React, {  useContext, useState, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import Products from './Products';
 import './styles/Catalogue.css';
+import Home from './Home';
 
 
 function Catalogue() {
@@ -39,6 +40,7 @@ function Catalogue() {
         <div className="titleCatalogue"> 
             <h1> Our Products </h1>
             <div className='catalogue' >
+            
                 {products.map(product => (
                         <Products 
                             id={product.id}
@@ -58,7 +60,9 @@ function Catalogue() {
                         />
                     ))}
             </div>
+            
         </div>
+       
     );
 }
 
