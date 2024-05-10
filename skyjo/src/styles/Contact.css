@@ -1,63 +1,62 @@
 .contact-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .contact-options {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .contact-option {
-    display: flex;
-    align-items: center;
-  }
-  
-  .contact-option i {
-    margin-right: 10px;
-  }
-  
-  .contact-form {
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .contact-form h3 {
-    margin-bottom: 10px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .form-group textarea {
-    height: 100px;
-    resize: vertical;
-  }
-  
-  button[type="submit"] {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #555;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact-option {
+  display: flex;
+  align-items: center;
+}
+
+.contact-option i {
+  margin-right: 10px;
+}
+
+.contact-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.contact-form h3 {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}

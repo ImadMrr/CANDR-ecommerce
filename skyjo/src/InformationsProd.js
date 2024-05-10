@@ -13,14 +13,11 @@ function InformationsProd() {
     const [liked, setLiked] = useState(false);
     const [addedToCart, setAddedToCart] = useState(false);
     const [zoomedImage, setZoomedImage] = useState(null);
-    const [showModal, setShowModal] = useState(false); // Nouvelle variable d'état pour afficher/masquer la boîte modale
-
+    const [showModal, setShowModal] = useState(false);
     useEffect(() => {
-        // Vérifie si le produit est déjà en favori
         const isLiked = favoriteItems.some(item => item.name_prod === location.state.name_prod);
         setLiked(isLiked);
     }, [favoriteItems, location.state.name_prod]);
-
     const handleAddToCart = () => {
         addToCart({
             name_prod: location.state.name_prod,
@@ -32,7 +29,6 @@ function InformationsProd() {
             setAddedToCart(false);
         }, 1000);
     };
-
     const handleLikeClick = () => {
         const isProductLiked = favoriteItems.some(item => item.name_prod === location.state.name_prod);
         setLiked(!isProductLiked);
@@ -45,16 +41,13 @@ function InformationsProd() {
             removeFromFavorites(location.state.name_prod);
         }
     };
-
     const handleImageClick = (image) => {
         setZoomedImage(image);
-        setShowModal(true); // Afficher la boîte modale lorsque l'image est cliquée
+        setShowModal(true);
     };
-
     const closeModal = () => {
-        setShowModal(false); // Masquer la boîte modale lorsque l'utilisateur clique à l'extérieur de l'image zoomée
+        setShowModal(false);
     };
-
     return (
         <div className="container clearfix">
             <div className="info-section">

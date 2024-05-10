@@ -4,21 +4,16 @@ import './styles/ShoppingCart.css'
 
 function ShoppingCart() {
   const { cartItems, removeFromCart, incrementQuantity, decrementQuantity } = useContext(CartContext);
-
   const handleRemoveItem = (index) => {
     removeFromCart(index);
   };
-
   const handleIncrementQuantity = (index) => {
     incrementQuantity(index);
   };
-
   const handleDecrementQuantity = (index) => {
     decrementQuantity(index);
   };
-
   const totalPrice = cartItems.reduce((acc, item) => acc + parseFloat(item.price) * item.quantity, 0);
-
   return (
     <div className="shopping-cart">
         <h2>Shopping Cart</h2>
@@ -38,8 +33,7 @@ function ShoppingCart() {
         </div>
         <button className="pay-button">Pay now !</button>
     </div>
-);
-
+  );
 }
 
 export default ShoppingCart;

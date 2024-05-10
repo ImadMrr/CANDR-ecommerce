@@ -3,8 +3,8 @@
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
-    max-width: 600px; /* Limiter largeur */
-    margin-left: auto; /* Centrer favoris horizontalement */
+    max-width: 600px;
+    margin-left: auto;
     margin-right: auto; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
@@ -12,7 +12,7 @@
 .favorite-items h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    text-align: center; /* Centrer  titre */
+    text-align: center;
 }
 
 .favorite-items ul {
@@ -29,11 +29,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.3s ease; /* transition */
+    transition: all 0.3s ease;
 }
 
 .favorite-items li:hover {
-    transform: translateY(-3px); /* Soulève légèrement */
+    transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
