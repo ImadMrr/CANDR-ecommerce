@@ -1,8 +1,7 @@
-import React, {  useContext } from 'react';
+import React, {  useContext, useState, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import Products from './Products';
 import './styles/Catalogue.css';
-import { useState, useEffect } from 'react'; //importation pour l'utilisation d'API
 
 
 function Catalogue() {
@@ -24,9 +23,7 @@ function Catalogue() {
                                                                         //Use of promesses
         .then((data) => {
 
-            //console.log(data);
             setProducts(data.products);
-            //console.log("PRODUITS 0000 : " + products);
         });
     
     }, []);
@@ -48,8 +45,16 @@ function Catalogue() {
                             img_prod={product.thumbnail}
                             name_prod={product.title}
                             price={product.price + '$'}
+                            description={product.description}
+                            brand={product.brand}
+                            category={product.category}
+                            stock={product.stock}
+                            discount={product.discountPercentage}
+                            rating={product.rating}
+                            images={product.images}
+
                             addToCart={() => handleAddToCart(
-                                { name_prod: name_prod, img_prod: img_prod, price: price })}
+                                { name_prod: product.title, img_prod: product.thumbnail, price: product.price })}
                         />
                     ))}
             </div>
