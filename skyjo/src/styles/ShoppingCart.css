@@ -1,20 +1,20 @@
 .shopping-cart {
   margin-top: 20px;
-  margin-bottom: 20px; /* Ajout d'une marge en bas */
+  margin-bottom: 20px; 
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
-  max-width: 600px; /* Limite la largeur du panier */
-  margin-left: auto; /* Centre le panier horizontalement */
-  margin-right: auto; /* Centre le panier horizontalement */
-  text-align: center; /* Centre le contenu horizontalement */
+  max-width: 600px;
+  margin-left: auto; /* Centrer panier horizontalement */
+  margin-right: auto;
+  text-align: center;
 }
 
 .shopping-cart h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  text-align: center; /* Centre le titre */
+  text-align: center; /* Centrer titre */
 }
 
 .shopping-cart ul {
@@ -23,16 +23,16 @@
 }
 
 .shopping-cart li {
-  margin-bottom: 20px; /* Augmente l'espacement entre les éléments */
+  margin-bottom: 20px; 
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease; /* Ajout de la transition */
+  transition: all 0.3s ease; 
 }
 
 .shopping-cart li:hover {
-  background-color: #f0f0f0; /* Changement de couleur au survol */
+  background-color: #f0f0f0; 
 }
 
 .shopping-cart .product-image {
@@ -40,17 +40,17 @@
   height: 100px;
   border-radius: 10px;
   margin-right: 20px;
-  border: 2px solid #ccc; /* Ajout d'une bordure autour de l'image */
+  border: 2px solid #ccc; 
 }
 
 .shopping-cart .product-details {
   display: flex;
-  flex-direction: column; /* Affiche les détails en colonne */
+  flex-direction: column; 
 }
 
 .shopping-cart .product-name {
   font-size: 18px;
-  margin-bottom: 5px; /* Réduit l'espacement après le nom */
+  margin-bottom: 5px; 
 }
 
 .shopping-cart .product-price {
@@ -78,7 +78,7 @@
 }
 
 .shopping-cart .quantity-buttons button:hover {
-  background-color: #0056b3; /* Changement de couleur au survol */
+  background-color: #0056b3; 
 }
 
 .shopping-cart .remove-button {
@@ -91,14 +91,14 @@
 }
 
 .shopping-cart .remove-button:hover {
-  background-color: #c82333; /* Changement de couleur au survol */
+  background-color: #c82333; 
 }
 
 .shopping-cart .total-price {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
-  text-align: center; /* Centre le total horizontalement */
+  text-align: center; 
 }
 
 .shopping-cart .pay-button {
@@ -110,11 +110,11 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
-  display: inline-block; /* Affiche le bouton de paiement en bloc */
-  margin-left: auto; /* Centre le bouton horizontalement */
-  transition: all 0.3s ease; /* Ajout de la transition */
+  display: inline-block; 
+  margin-left: auto; 
+  transition: all 0.3s ease; 
 }
 
 .shopping-cart .pay-button:hover {
-  background-color: #218838; /* Changement de couleur au survol */
+  background-color: #218838; 
 }
