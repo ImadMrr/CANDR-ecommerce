@@ -4,7 +4,7 @@
     padding: 20px;
   }
   
-
+  /* Titres */
   h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -15,7 +15,6 @@
     margin-bottom: 10px;
   }
   
-
   .product-image {
     max-width: 100%;
     height: auto;
@@ -26,11 +25,6 @@
     margin-bottom: 20px;
   }
   
-  .product-price {
-    font-size: 20px;
-    color: #B12704; 
-    margin-bottom: 10px;
-  }
   
   .product-description {
     font-size: 16px;
@@ -38,7 +32,7 @@
     margin-bottom: 20px;
   }
   
-
+  /* Galerie d'images */
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -84,3 +78,24 @@
     object-fit: contain;
   }
   
+
+  .product-price {
+    font-size: 20px;
+    color: #B12704;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    top: 0;
+    right: -60px; /* ou ajustez selon votre besoin */
+    background-color: #ffcccc;
+    padding: 3px 6px;
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+

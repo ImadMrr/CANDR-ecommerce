@@ -45,27 +45,30 @@ function InformationsProd() {
     };
 
     return (
-        <div className="container">
-            <h2>{location.state.name_prod}</h2>
-            <h3>{location.state.brand}</h3>
-            <img className="product-image" src={location.state.img_prod} alt="Product" />
-            <p className="product-price">{location.state.price}</p>
-            <p className="product-description">{location.state.description}</p>
-
+        <div className="container clearfix">
+            <div className="info-section">
+                <h2>{location.state.name_prod}</h2>
+                <h3>{location.state.brand}</h3>
+                <p className="category-info">Category: {location.state.category}</p>
+                <p className="discount-info">Discount: {location.state.discount}%</p>
+                <p className="product-price">{location.state.price}</p>
+                <div className="action-buttons">
+                    <button className="add-to-cart" onClick={handleAddToCart}>Add to cart</button>
+                    <button className="like-button" onClick={handleLikeClick}>
+                        <img className="like-icon" src={liked ? likepress : like} alt="Like" />
+                    </button>
+                    <p>Stock: {location.state.stock}</p>
+                </div>
+                <p className="product-description">{location.state.description}</p>
+            </div>
+            <div className="image-section">
+                <img className="product-image" src={location.state.img_prod} alt="Product" />
+            </div>
             <div className="image-gallery">
                 {location.state.images.map(image =>
                     <img src={image} key={image} alt="Product" />
                 )}
             </div>
-
-            <button className="add-to-cart" onClick={handleAddToCart}>Add to cart</button>
-            <button className="like-button" onClick={handleLikeClick}>
-                <img className="like-icon" src={liked ? likepress : like} alt="Like" />
-            </button>
-
-            <p> Category: {location.state.category} </p>
-            <p> Stock: {location.state.stock} </p>
-            <h3>Discount: {location.state.discount}%</h3>
         </div>
     );
 }
