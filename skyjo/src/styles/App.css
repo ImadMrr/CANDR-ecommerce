@@ -47,15 +47,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px; /* Ajustez la hauteur selon vos préférences */
+  height: 60px; 
   background-color: #333;
   color: white;
-  z-index: 1000; /* assure que la barre de navigation est au-dessus de tout autre contenu */
+  z-index: 1000; 
 }
 
-/* Ajoutez ce style pour décaler le contenu vers le bas pour éviter qu'il ne soit masqué par la barre de navigation */
 body {
-  padding-top: 40px; /* ajustez la valeur en fonction de la hauteur de votre barre de navigation */
+  padding-top: 40px; 
 }
 
 .top-nav ul {
