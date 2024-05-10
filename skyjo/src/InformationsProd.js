@@ -4,6 +4,7 @@ import { CartContext } from './CartContext';
 import { FavoriteContext } from './FavoriteContext';
 import like from './assets/like.png';
 import likepress from './assets/likepress.png';
+import './styles/Informations.css';
 
 function InformationsProd() {
     const location = useLocation();
