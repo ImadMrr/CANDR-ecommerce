@@ -58,7 +58,7 @@ function InformationsProd() {
             )}
 
             <button className="Buy" onClick={handleAddToCart} > Add to cart </button>
-            <button className="Favorite" onClick={handleLikeClick} > Like !</button>
+            <img className="likeProd" src={liked ? likepress : like} alt="Like" onClick={handleLikeClick} />
 
 
             <p> Category : {location.state.category} </p>
