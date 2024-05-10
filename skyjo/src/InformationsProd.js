@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import like from './assets/like.png';
 
 function InformationsProd( ) {
 
@@ -19,6 +20,9 @@ function InformationsProd( ) {
             {location.state.images.map(image =>
                 <img src={image} />
             )}
+
+            <button className="Buy">Buy it now !</button>
+            <button className="Like">LIKE</button>
 
             <p> Category : {location.state.category} </p>
             <p> Stock : {location.state.stock} </p>
