@@ -57,6 +57,10 @@ function InformationsProd() {
                 <img src={image} key={image} alt="Product" />
             )}
 
+            <button className="Buy" onClick={handleAddToCart} > Add to cart </button>
+            <button className="Favorite" onClick={handleLikeClick} > Like !</button>
+
+
             <p> Category : {location.state.category} </p>
             <p> Stock : {location.state.stock} </p>
             <h3>Discount : {location.state.discount}%</h3>
