@@ -56,6 +56,9 @@ function InformationsProd() {
                 <img src={image} key={image} alt="Product" />
             )}
 
+            <button className="Buy">Buy it now !</button>
+            <button className="Like">LIKE</button>
+
             <p> Category : {location.state.category} </p>
             <p> Stock : {location.state.stock} </p>
             <h3>Discount : {location.state.discount}%</h3>
