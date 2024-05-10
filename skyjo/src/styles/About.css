@@ -2,8 +2,8 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center; /* Centrer le texte horizontalement */
-    border: 2px solid #333; /* Ajouter une bordure de 2 pixels solide */
-    border-radius: 10px; /* Ajouter une bordure arrondie */
+    text-align: center; 
+    border: 2px solid #333; 
+    border-radius: 10px; 
   }
   

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {  useContext } from 'react';
+import { CartContext } from './CartContext';
 import Products from './Products';
 import './styles/Catalogue.css';
 import { useState, useEffect } from 'react'; //importation pour l'utilisation d'API
@@ -6,7 +7,12 @@ import { useState, useEffect } from 'react'; //importation pour l'utilisation d'
 
 function Catalogue() {
 
+    const { addToCart } = useContext(CartContext);
     const [products, setProducts] = useState([]); 
+    
+    const handleAddToCart = (product) => {
+       addToCart(product);
+    }
 
     useEffect(() => {
 
@@ -42,6 +48,8 @@ function Catalogue() {
                             img_prod={product.thumbnail}
                             name_prod={product.title}
                             price={product.price + '$'}
+                            addToCart={() => handleAddToCart(
+                                { name_prod: name_prod, img_prod: img_prod, price: price })}
                         />
                     ))}
             </div>

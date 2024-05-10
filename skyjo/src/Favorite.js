@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { FavoriteContext } from './FavoriteContext';
 
 function Favorite() {
-  return (
-    <div>
-      <h2>Favorite</h2>
-      {/* Ajoutez ici le contenu de la page d'accueil */}
-    </div>
-  );
+    const { favoriteItems, removeFromFavorites } = useContext(FavoriteContext);
+
+    const handleRemoveFavorite = (productName) => {
+        removeFromFavorites(productName);
+    };
+
+    return (
+        <div className="favorite-items">
+            <h2>Favorite Items</h2>
+            <ul>
+                {favoriteItems.map((item, index) => (
+                    <li key={index}>
+                        <span>{item.name_prod}</span> - <span>{item.price}</span>
+                        <button onClick={() => handleRemoveFavorite(item.name_prod)}>Remove</button>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
-export default Favorite; 
+export default Favorite;

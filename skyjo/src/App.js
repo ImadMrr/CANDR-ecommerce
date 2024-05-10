@@ -10,11 +10,15 @@ import ShoppingCart from './ShoppingCart';
 import Favorite from './Favorite';
 import logo from './assets/logoshop.png';
 import InformationsProd from './InformationsProd';
+import { CartProvider } from './CartContext'; 
+import { FavoriteProvider } from './FavoriteContext';
 
 
 function App() {
   return (
-    <Router>
+    <CartProvider>
+      <FavoriteProvider>
+      <Router>
       <div>
         <nav className="top-nav">
           <div className="logo-container">
@@ -35,7 +39,7 @@ function App() {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/shopping cart">Shopping-Cart</Link>
+            <Link to="/shoppingCart">Shopping Cart</Link>
             </li>
             <li>
               <Link to="/favorite">Favorite</Link>
@@ -47,14 +51,15 @@ function App() {
           <Route path="/products" element={<Catalogue />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/shopping cart" element={<ShoppingCart />} />
+          <Route path="/shoppingCart" element={<ShoppingCart />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/InformationsProd" element={ < InformationsProd />} />
         </Routes>
         <Footer />
       </div>
-    </Router>
-    
+      </Router>
+      </FavoriteProvider>
+    </CartProvider>
     
   );
 }

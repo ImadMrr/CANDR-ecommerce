@@ -17,6 +17,8 @@
 .product {
     margin-bottom: 20px;
     position: relative; /* positionne le prix par rapport au conteneur du produit */
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .product img {
@@ -28,7 +30,6 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255, 0.7); /*fond quasi transparent pour le prix */
     padding: 5px 10px;
     border-radius: 5px;
   }

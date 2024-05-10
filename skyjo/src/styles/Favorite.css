@@ -1,0 +1,35 @@
+.favorite-items {
+    margin-top: 20px;
+}
+
+.favorite-items h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.favorite-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite-items li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorite-items li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.favorite-items li button:hover {
+    background-color: #c82333;
+}
